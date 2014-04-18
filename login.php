@@ -2,7 +2,7 @@
 session_start();
 	if(!empty($_POST))
 		{
-			if((isset($_POST['pseudo'])) AND (isset($_POST['mdp'])))
+			if((!empty($_POST['pseudo'])) AND (!empty($_POST['mdp'])))
 				{
 					session_start();
 					echo "test";

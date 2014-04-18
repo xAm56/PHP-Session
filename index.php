@@ -4,7 +4,7 @@ $_POST['pseudo'] = $pseudo;
 echo " $pseudo  ";
 	if(!isset($pseudo))
 		{
-			echo 'Bienvenue' . $pseudo . '!';
+			header('Location:login.php')
 		
 		}
 	else
